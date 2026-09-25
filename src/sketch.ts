@@ -24,8 +24,8 @@ export function createSketch(deps: SketchDeps): (p: p5) => void {
     const carImgs = new Map<Seat, p5.Image>();
 
     p.preload = () => {
-      trackImg = p.loadImage('/assets/track.png');
-      for (const seat of SEATS) carImgs.set(seat, p.loadImage(`/assets/car${seat}.png`));
+      trackImg = p.loadImage('assets/track.png');
+      for (const seat of SEATS) carImgs.set(seat, p.loadImage(`assets/car${seat}.png`));
     };
 
     p.setup = () => {
