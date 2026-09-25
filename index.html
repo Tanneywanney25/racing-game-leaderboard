@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Top-Down Racer</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header id="hud">
+        <span id="hud-speed">Speed: 0 px/s</span>
+        <span id="hud-distance">Distance: 0</span>
+        <span id="hud-conn">○</span>
+      </header>
+      <div id="layout">
+        <main id="stage-wrap">
+          <div id="stage" aria-label="Top-down racer canvas"></div>
+          <div id="lobby" hidden></div>
+        </main>
+        <aside id="side">
+          <section id="leaderboard"></section>
+          <section id="best-times"></section>
+        </aside>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
